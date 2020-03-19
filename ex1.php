@@ -1,15 +1,22 @@
 <?php
 
 $equipe = new Equipe(26,  "Olympique de Marseille");
-$equipe2 = new Equipe(26,  "Olympique de Marseille");
-$equipe3 = new Equipe(26,  "Olympique de Marseille");
-$equipe4 = new Equipe(26,  "Olympique de Marseille");
+$equipe2 = new Equipe(0,  "PSG");
+$equipe3 = new Equipe(1,  "Nantes");
+$equipe4 = new Equipe(0,  "Saint Etienne");
 
 
 //$equipe->setName("Olympique de Marseille");
 //$equipe->setNbTitre(26);
 
 $equipe->display();
+echo "<br>";
+$equipe2->display();
+echo "<br>";
+$equipe3->display();
+echo "<br>";
+$equipe4->display();
+echo "<br>";
 
 $equipe::getNbTeam();
 
@@ -22,6 +29,7 @@ class Equipe{
     static function getNbTeam(){
         echo self::cons;
         echo self::$nbEquipe;
+        echo "<br>";
     }
 
 
@@ -32,7 +40,7 @@ class Equipe{
     }
 
     function __destruct(){
-        echo "Destructor";
+        echo "Destructor <br>";
     }
 
     public function getName(){
