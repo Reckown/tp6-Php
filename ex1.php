@@ -32,7 +32,6 @@ class Equipe{
         echo "<br>";
     }
 
-
     function __construct($newNbTitre, $newName){
         $this->nbTitre = $newNbTitre;
         $this->name = $newName;
