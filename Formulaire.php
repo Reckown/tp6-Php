@@ -6,24 +6,19 @@
 
 class Formulaire{
 
-    function __construct($meth, $url) {
-        echo "<form method='".$meth."' action='".$url."'>";
+    function __construct($nomFichier, $methode) {
+        echo "<form method='".$nomFichier."' action='".$methode."'>";
     }
 
-    function ajouterZoneText($textZ){
-        echo "<input type= 'text' value='".$textZ."' />";
+    function ajouterZoneText($text){
+        echo $text."<input type= 'text' name='".$text."' />";
     }
 
-    function ajouterBouton($text){
-        echo "<input type = 'button' value='".$text."'/>";
+    function ajouterBouton(){
+        echo "<input type = 'submit' value='Envoyer'/>";
     }
 
     function getForm(){
-        echo "Entrez votre prénom : ";
-        $this->ajouterZoneText("");
-        echo "<br>";
-        echo "Entrez votre nom : ";
-        $this->ajouterZoneText("");
-        $this->ajouterBouton("envoyer");
+        echo "</form>";
     }
 }

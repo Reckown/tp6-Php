@@ -3,14 +3,13 @@
 <?php
 include 'Formulaire.php';
 
-$form = new Formulaire("file.txt", "2");
-echo "Entrez votre prénom : ";
-$form->ajouterZoneText("");
+$form = new Formulaire("file.txt", "post");
+$form->ajouterZoneText("Votre nom");
 echo "<br>";
-echo "Entrez votre nom : ";
-$form->ajouterZoneText("");
-$form->ajouterBouton("envoyer");
-
+$form->ajouterZoneText("Votre prénom");
+echo "<br>";
+$form->ajouterBouton();
+$form->getForm();
 
 
 if (isset($_POST['Votre_nom']) && isset($_POST['Votre_code'])) {
