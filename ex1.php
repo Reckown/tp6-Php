@@ -5,7 +5,6 @@ $equipe2 = new Equipe(0,  "PSG");
 $equipe3 = new Equipe(1,  "Nantes");
 $equipe4 = new Equipe(0,  "Saint Etienne");
 
-
 //$equipe->setName("Olympique de Marseille");
 //$equipe->setNbTitre(26);
 
