@@ -22,6 +22,7 @@
 
 </form>
 </body>
+
 <?php
 
 $form = new Form();
@@ -70,7 +71,6 @@ class Form
     function setAge(){
         $this->age = $_POST['age'];
     }
-
 
     function __construct(){
         //if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['mail']) && isset($_POST['age'])) {
